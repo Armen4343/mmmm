@@ -16,5 +16,5 @@ jobs:
       uses: trufflesecurity/trufflehog@main
       with:
         base: ./
-        head: ${{ github.ref_name }}
-        extra_args: --only-verified
+        #head: ${{ github.ref_name }}
+        extra_args: --only-verified --max_depth 0
